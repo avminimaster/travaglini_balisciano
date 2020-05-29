@@ -1,0 +1,423 @@
+/******************PARTI FISSE********************/
+
+h3 {
+    font-family: Verdana, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    font-family: Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    font-weight: normal;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: black;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+table {
+    margin-top: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background: #547794;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #4b95d1;
+}
+
+footer {
+    background-color: white;
+    opacity: 0.7;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    vertical-align: middle;
+}
+
+
+/******************PARTI FISSE********************/
+
+
+/***********************ID************************/
+
+#navbar {
+    background: #454747;
+}
+
+#navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0px;
+}
+
+#navbar .container .logo {
+    padding-left: 20px;
+}
+
+#navbar .container ul {
+    display: flex;
+    padding-left: 0px;
+    margin-top: none;
+}
+
+#navbar .container ul li {
+    list-style: none;
+}
+
+#navbar .container ul li {
+    padding: 9px;
+    display: block;
+}
+
+#navbar .container h1 {
+    text-transform: uppercase;
+    padding-left: 1.5rem;
+}
+
+#navbar ul li a:hover,
+#navbar ul li.current {
+    background: #555;
+    color: orange;
+}
+
+#navbar ul li .current {
+    background: #555;
+    color: orange;
+}
+
+#logo_so {
+    width: 75%;
+    vertical-align: middle;
+    margin-left: 10%;
+}
+
+#nowrap {
+    white-space: normal;
+}
+
+#immComponenti {
+    display: auto;
+    border-style: solid;
+    border-width: 2px;
+    animation: 1s linear sfoca_immagine;
+    border-style: none;
+}
+
+#immComponenti:hover {
+    border-style: solid;
+    animation: infinite 1s linear cambiacolore;
+}
+
+#paragrafo1 {
+    animation: infinite 5s;
+    animation-name: allegro;
+}
+
+#paragrafo2 {
+    animation: infinite 5.5s;
+    animation-name: allegro;
+}
+
+#speciale {
+    white-space: unset;
+    animation: infinite;
+    animation-name: speciale;
+    animation-duration: 4s;
+}
+
+
+/***********************ID************************/
+
+
+/*********************CLASSI**********************/
+
+.button {
+    margin: 2%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 13px 18px;
+    cursor: pointer;
+    border: none;
+    animation-name: reverse_button;
+    animation-duration: 1s;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    background: #333;
+    padding: 13px 18px;
+    border: none;
+}
+
+.btn-light {
+    background: #bbb;
+    color: #333;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn:hover {
+    background: #FFE933;
+    color: #333;
+}
+
+.button:hover {
+    animation-name: button;
+    animation-duration: 1s;
+    background-color: yellow;
+    color: black;
+}
+
+.background {
+    background-image: linear-gradient(to top right, teal, lightblue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto 100%;
+}
+
+.div_1 {
+    padding-bottom: 5%;
+    border-bottom-style: solid;
+    border-color: yellow;
+}
+
+.div_2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.spazio {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.sezioni_index {
+    padding-left: 1%;
+    padding-right: 1%;
+    border-style: groove;
+    border-color: gray;
+    width: 200px;
+}
+
+.sezioni_index:hover {
+    transform: translateY(-2px);
+}
+
+.primafase {
+    display: flex;
+    justify-content: baseline;
+}
+
+.ingrandisci_immagine {
+    border-style: double;
+    border-color: black;
+    border-width: 1px;
+    animation-name: rimpicciolisci;
+    animation-duration: 1s;
+}
+
+.ingrandisci_immagine:hover {
+    animation-name: ingrandisci;
+    animation-duration: 1s;
+    border-style: double;
+    border-width: 1px;
+    border-color: yellow;
+}
+
+.big {
+    width: 50%;
+    animation-name: smallest;
+    animation-duration: 1s;
+}
+
+.big:hover {
+    animation: biggest;
+    animation-duration: 1s;
+    width: 60%;
+}
+
+.passi_installazione {
+    height: auto;
+    height: 100%;
+}
+
+.componenti:hover {
+    transform: translateY(-2px);
+}
+
+.vga_jack {
+    border-style: groove;
+    border-color: yellow;
+    text-align: center;
+}
+
+.vga_jack:hover {
+    transform: translateY(-2px);
+}
+
+
+/*********************CLASSI**********************/
+
+
+/*******************ANIMAZIONI********************/
+
+@keyframes button {
+    0% {
+        background-color: #333;
+        color: white;
+    }
+    100% {
+        background-color: yellow;
+        color: black;
+    }
+}
+
+@keyframes reverse_button {
+    0% {
+        background-color: yellow;
+        color: black;
+    }
+    100% {
+        background-color: #333;
+        color: white;
+    }
+}
+
+@keyframes ingrandisci {
+    0% {
+        border-style: double;
+        border-width: 1px;
+        border-color: black;
+    }
+    100% {
+        border-style: double;
+        border-width: 1px;
+        border-color: yellow;
+    }
+}
+
+@keyframes rimpicciolisci {
+    0% {
+        border-style: double;
+        border-width: 1px;
+        border-color: yellow;
+    }
+    100% {
+        border-style: double;
+        border-width: 1px;
+        border-color: black;
+    }
+}
+
+@keyframes biggest {
+    0% {
+        width: 50%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes smallest {
+    0% {
+        width: 60%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes cambiacolore {
+    0% {
+        border-color: grey;
+    }
+    50% {
+        border-color: blue;
+    }
+    100% {
+        border-color: grey;
+    }
+}
+
+@keyframes sfoca_immagine {
+    0% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes allegro {
+    5% {
+        transform: translateY(-5px);
+        transform: rotateZ(1deg);
+    }
+    10% {
+        transform: translateY(-5px);
+        transform: rotateZ(-2deg);
+    }
+    15% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes speciale {
+    0% {
+        color: orange;
+    }
+    42% {
+        color: yellow;
+    }
+    57% {
+        color: lightgoldenrodyellow;
+    }
+    71% {
+        color: lightgoldenrodyellow;
+    }
+    85% {
+        color: yellow;
+    }
+    100% {
+        color: orange;
+    }
+}
+
+
+/*******************ANIMAZIONI********************/

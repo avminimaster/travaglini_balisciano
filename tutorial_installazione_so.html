@@ -1,0 +1,80 @@
+<!--ENUNCIAZIONE DELLA VERSIONE HTML (5)-->
+<!DOCTYPE html>
+<html>
+
+<!--INIZIALIZZAZIONE PAGINA-->
+
+<head>
+    <title> CREARE DA 0 UN COMPUTER! </title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://images.vexels.com/media/users/3/128243/isolated/preview/a1a5b9494d50bb3754bba547f2d88487-computer-monitor-flat-icon-by-vexels.png">
+    <meta charset="utf-8">
+</head>
+
+<header>
+    <nav id="navbar">
+        <div class="container">
+            <h1 class="logo">
+                <a href="index.html"> Balisciano Lorenzo e Travaglini Nicola</a>
+            </h1>
+            <ul>
+                <li><a class="current" href="index.html"> Home </a></li>
+                <li><a href="fase13.html"> Indietro </a></li>
+                <li><a href="sistemi_operativi.html"> S.O. </a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!--PARTE CENTRALE-->
+
+<body class="background">
+    <h1>Ed ecco qui i passaggi per l'installazione del sistema operativo sul nostro computer pronto!</h1>
+    <h2>Procederemo per passi, quindi seguili con <em>molta attenzione</em>, al fine di evitare formattazioni di dischi con dati personali!</h2>
+    <div class="spazio passi_installazione">
+        <p>Partiamo con il dare per scontato che il computer appena creato nel precedente tutorial sia completamente vuoto (ovvero accendendolo si veda chiaramente il BIOS). Se è così, puoi procedere con l'installazione del Sistema Operativo.</p>
+        <p><b>Premesse fondamentali</b>: <br> Procurati un altro computer, dove installerai il sistema operativo e lo caricarei su una chiavetta (i passaggi sono spiegati qui di seguito). Il nostro tipo di installazione si chiama infatti FLASH USB INSTALLER,
+            ovvero andremo ad installare il sistema operativo sul computer da un'altra chiavetta! Procurati quindi una chiavetta VUOTA (altrimenti tutti i file verranno eliminati) da almeno 10Gb di spazio.
+        </p>
+        <ol>
+            <li style="margin-bottom: 10%;" class="spazio">Per prima cosa, devi scegliere quale sistema operativo vuoi installare sul tuo computer. Ti proponiamo
+                <a href="sistemi_operativi.html">qui</a> alcuni dei nostri preferiti sistemi operativi (di cui la maggior parte GRATUITI);
+                <div class="spazio" align="center"><img width="50%" src="https://1.bp.blogspot.com/-LM9OvT40jkU/WdSw1K6GK0I/AAAAAAAAEeU/hExt_hF9wIkGLcdzO1oejPd2kiXFn83ggCLcBGAs/s1600/sistema-operativo.jpg" alt="SISTEMI OPERATIVI"></div>
+            </li>
+
+            <li style="margin-bottom: 10%;" class="spazio">Dopo averlo scelto, vai sul sito (sempre linkato <a href="sistemi_operativi.html">nella nostra pagina</a>) del sistema operativo scelto e clicca sul tasto Download;
+                <div class="spazio" align="center"><img width="50%" src="ubuntu_download.png" alt="DOWNLOAD S.O."></div>
+            </li>
+
+            <li style="margin-bottom: 10%;" class="spazio">Una volta completato il download, ti accorgerai che il file scaricato è <em>un'immagine .iso</em>. Ora, se provassi a mettere quel file sulla chiavetta, ad attaccarla al comnputer e ad accenderlo, ti accorgeresti che non funziona. Questo perché
+                dobbiamo prima rendere <b>eseguibile</b> quell'immagine .iso che hai scaricato, così che il tuo computer riesca a leggerla all'accensione. Per fare ciò, scarica <a href="https://www.balena.io/etcher/">balenaEtcher</a>, un software in grado
+                di farlo. Quindi aprilo e seleziona: il file .iso del sistema operativo; la chiavetta (attaccata al computer) su cui vuoi mettere i file;
+                <div class="spazio" align="center"><img width="50%" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Etcher_1.4.9_running_on_Windows_10.png" alt="BALENA ETCHER"></div>
+            </li>
+
+            <li style="margin-bottom: 10%;" class="spazio">Completata questa operazione, non ti resta che attaccare la chiavetta con i <em>file di boot</em> (ovvero i file che fanno partire l'installazione del sistema operativo sul tuo computer) sul tuo computer appena montato, accenderlo premendo
+                ripetutamente F11 (in realtà dipende dal tipo di BIOS installato) e aspettare quindi che ti venga fuori una sorta di menù chiamato <b>BOOT LOADER</b>. Con questo menù puoi praticamente scegliere da quale disco, o chiavetta inserita, vuoi
+                far partire il tuo computer. Nel nostro caso, ovviamento, vogliamo far partire il computer con la chiavetta con i file di installazione del sistema operativo che hai caricato! Quindi seleziona con le freccette (quelle in basso a destra
+                della tastiera) il nome della chiavetta che hai inserito, e premi INVIO;
+                <div class="spazio" align="center"><img width="50%" src="https://i1.wp.com/static.makeuseof.com/wp-content/uploads/2015/05/ubuntu-usb-install.jpg?resize=800%2C400&ssl=1" alt="CHIAVETTA BOOT"></div>
+            </li>
+
+            <li class="spazio">Ti sembrerà incredibile, ma come per magia, ti si aprirà il menù di installazione del sistema operativo che hai scelto. Seleziona la voce "Install [nome del tuo sistema operativo]" e a questo punto non ti resta che seguire le istruzioni per
+                l'installazione del sistema operativo, come per esempio "Selezione della lingua", "Se vuoi già tutti i software d'ufficio (come Libre Office) o preferisci installare dopo", "La configurazione della rete Wi-Fi di casa tua", ecc... (p.s.
+                non preoccuparti, è tutto guidato);
+                <div class="spazio" align="center"><img width="50%" src="https://ubuntucommunity.s3.dualstack.us-east-2.amazonaws.com/optimized/2X/4/46e9947d7b4ad3e96487d81cf61c327485d56b5a_2_690x424.png" alt="INSTALLAZIONE S.O."></div>
+            </li>
+        </ol>
+        <p align="center">Ti proponiamo un altro tutorial scelto da noi <a href="https://www.aranzulla.it/come-installare-un-sistema-operativo-1115340.html">qui</a>!</p>
+    </div>
+    <div>
+        <footer>
+            <p class="spazio">In caso ci fossero dubbi chiamaci o scrivici!</p>
+            <p>CONTATTI:</p>
+            <p align="center"><em>lorenzo.balisciano@aldini.istruzioneer.it 3703175514</em></p>
+            <p align="center"><em>nicola.travaglini@aldini.istruzioneer.it 3342219661</em></p>
+        </footer>
+    </div>
+</body>
+
+</html>
